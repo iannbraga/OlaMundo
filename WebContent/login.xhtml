@@ -6,17 +6,16 @@
 	<title>Hello World</title>
 </h:head>
 <h:body>
-	<h:messages style="color:red;margin:8px;" />
 	<h:form >
 		<h:panelGrid columns="2">
 			<h:outputLabel value="Usuario:"/>
 			<h:inputText value="#{loginController.usuario}"/>
 			<h:outputLabel value="Senha:"/>
 			<h:inputSecret value="#{loginController.senha}"/>
-			
 			<h:commandButton value="Entrar" action="#{loginController.entrar}"/>
 			<h:commandButton value="Limpar" actionListener="#{loginController.limpar}"/>
 		</h:panelGrid>
+		<h:messages style="color:red;margin:8px;" />
 	</h:form>
 	
 </h:body>
